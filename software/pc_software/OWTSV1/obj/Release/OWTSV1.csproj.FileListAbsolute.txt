@@ -1,0 +1,63 @@
+C:\Users\Teng\AppData\Local\Temporary Projects\OWTSV1\bin\Release\OWTSV1.exe
+C:\Users\Teng\AppData\Local\Temporary Projects\OWTSV1\bin\Release\OWTSV1.pdb
+C:\Users\Teng\AppData\Local\Temporary Projects\OWTSV1\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Teng\AppData\Local\Temporary Projects\OWTSV1\obj\Release\OWTSV1.Form1.resources
+C:\Users\Teng\AppData\Local\Temporary Projects\OWTSV1\obj\Release\OWTSV1.Properties.Resources.resources
+C:\Users\Teng\AppData\Local\Temporary Projects\OWTSV1\obj\Release\OWTSV1.csproj.GenerateResource.Cache
+C:\Users\Teng\AppData\Local\Temporary Projects\OWTSV1\obj\Release\OWTSV1.exe
+C:\Users\Teng\AppData\Local\Temporary Projects\OWTSV1\obj\Release\OWTSV1.pdb
+C:\Users\Teng\Documents\Visual Studio 2008\Projects\OWTSV1\OWTSV1\obj\Release\OWTSV1.exe
+C:\Users\Teng\Documents\Visual Studio 2008\Projects\OWTSV1\OWTSV1\obj\Release\OWTSV1.pdb
+C:\Users\Teng\Documents\Visual Studio 2008\Projects\OWTSV1\OWTSV1\bin\Release\OWTSV1.exe
+C:\Users\Teng\Documents\Visual Studio 2008\Projects\OWTSV1\OWTSV1\bin\Release\OWTSV1.pdb
+C:\Users\Teng\Documents\Visual Studio 2008\Projects\OWTSV1\OWTSV1\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Teng\Documents\Visual Studio 2008\Projects\OWTSV1\OWTSV1\obj\Release\OWTSV1.Form1.resources
+C:\Users\Teng\Documents\Visual Studio 2008\Projects\OWTSV1\OWTSV1\obj\Release\OWTSV1.Properties.Resources.resources
+C:\Users\Teng\Documents\Visual Studio 2008\Projects\OWTSV1\OWTSV1\obj\Release\OWTSV1.csproj.GenerateResource.Cache
+C:\Users\Teng\Documents\Visual Studio 2008\Projects\OWTSV1\OWTSV1\bin\Release\ZedGraph.dll
+C:\Users\Teng\Documents\Visual Studio 2008\Projects\OWTSV1\OWTSV1\bin\Release\ZedGraph.xml
+C:\Users\Teng\Documents\Visual Studio 2008\Projects\OWTSV1\OWTSV1\obj\Release\OWTSV1.OpenConnectionForm.resources
+C:\Users\Carson\Desktop\OWTSV1 - 0205\OWTSV1\obj\Release\OWTSV1.exe
+C:\Users\Carson\Desktop\OWTSV1 - 0205\OWTSV1\obj\Release\OWTSV1.pdb
+C:\Users\Carson\Desktop\OWTSV1 - 0205\OWTSV1\bin\Release\OWTSV1.exe
+C:\Users\Carson\Desktop\OWTSV1 - 0205\OWTSV1\bin\Release\OWTSV1.pdb
+C:\Users\Carson\Desktop\OWTSV1 - 0205\OWTSV1\bin\Release\ZedGraph.dll
+C:\Users\Carson\Desktop\OWTSV1 - 0205\OWTSV1\bin\Release\ZedGraph.xml
+C:\Users\Carson\Desktop\OWTSV1 - 0205\OWTSV1\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Carson\Desktop\OWTSV1 - 0205\OWTSV1\obj\Release\OWTSV1.Form1.resources
+C:\Users\Carson\Desktop\OWTSV1 - 0205\OWTSV1\obj\Release\OWTSV1.OpenConnectionForm.resources
+C:\Users\Carson\Desktop\OWTSV1 - 0205\OWTSV1\obj\Release\OWTSV1.Properties.Resources.resources
+C:\Users\Carson\Desktop\OWTSV1 - 0205\OWTSV1\obj\Release\OWTSV1.csproj.GenerateResource.Cache
+C:\Users\Carson\Dropbox\OlyMEMS2\OWTSV1\OWTSV1\obj\Release\OWTSV1.exe
+C:\Users\Carson\Dropbox\OlyMEMS2\OWTSV1\OWTSV1\obj\Release\OWTSV1.pdb
+C:\Users\Teng\Dropbox\OlyMEMS2\OWTSV1\OWTSV1\obj\Release\OWTSV1.exe
+C:\Users\Teng\Dropbox\OlyMEMS2\OWTSV1\OWTSV1\obj\Release\OWTSV1.pdb
+C:\Users\Teng\Documents\My Dropbox\OlyMEMS2\OWTSV1\OWTSV1\obj\Release\OWTSV1.exe
+C:\Users\Teng\Documents\My Dropbox\OlyMEMS2\OWTSV1\OWTSV1\obj\Release\OWTSV1.pdb
+C:\Users\Teng\Documents\My Dropbox\OlyMEMS2\OWTSV1\OWTSV1\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Teng\Documents\My Dropbox\OlyMEMS2\OWTSV1\OWTSV1\obj\Release\OWTSV1.Form1.resources
+C:\Users\Teng\Documents\My Dropbox\OlyMEMS2\OWTSV1\OWTSV1\obj\Release\OWTSV1.OpenConnectionForm.resources
+C:\Users\Teng\Documents\My Dropbox\OlyMEMS2\OWTSV1\OWTSV1\obj\Release\OWTSV1.Properties.Resources.resources
+C:\Users\Teng\Documents\My Dropbox\OlyMEMS2\OWTSV1\OWTSV1\obj\Release\OWTSV1.csproj.GenerateResource.Cache
+C:\Users\Teng\Documents\My Dropbox\OlyMEMS2\OWTSV1\OWTSV1\bin\Release\OWTSV1.exe
+C:\Users\Teng\Documents\My Dropbox\OlyMEMS2\OWTSV1\OWTSV1\bin\Release\OWTSV1.pdb
+C:\Users\Teng\Documents\My Dropbox\OlyMEMS2\OWTSV1\OWTSV1\bin\Release\ZedGraph.dll
+C:\Users\Teng\Documents\My Dropbox\OlyMEMS2\OWTSV1\OWTSV1\bin\Release\ZedGraph.xml
+C:\Users\Teng\Dropbox\OlyMEMS2\OWTSV1\OWTSV1\bin\Release\OWTSV1.exe
+C:\Users\Teng\Dropbox\OlyMEMS2\OWTSV1\OWTSV1\bin\Release\OWTSV1.pdb
+C:\Users\Teng\Dropbox\OlyMEMS2\OWTSV1\OWTSV1\bin\Release\ZedGraph.dll
+C:\Users\Teng\Dropbox\OlyMEMS2\OWTSV1\OWTSV1\bin\Release\ZedGraph.xml
+C:\Users\Teng\Dropbox\OlyMEMS2\OWTSV1\OWTSV1\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Teng\Dropbox\OlyMEMS2\OWTSV1\OWTSV1\obj\Release\OWTSV1.Form1.resources
+C:\Users\Teng\Dropbox\OlyMEMS2\OWTSV1\OWTSV1\obj\Release\OWTSV1.OpenConnectionForm.resources
+C:\Users\Teng\Dropbox\OlyMEMS2\OWTSV1\OWTSV1\obj\Release\OWTSV1.Properties.Resources.resources
+C:\Users\Teng\Dropbox\OlyMEMS2\OWTSV1\OWTSV1\obj\Release\OWTSV1.csproj.GenerateResource.Cache
+C:\Users\Carson\Dropbox\OlyMEMS2\OWTSV1\OWTSV1\bin\Release\OWTSV1.exe
+C:\Users\Carson\Dropbox\OlyMEMS2\OWTSV1\OWTSV1\bin\Release\OWTSV1.pdb
+C:\Users\Carson\Dropbox\OlyMEMS2\OWTSV1\OWTSV1\bin\Release\ZedGraph.dll
+C:\Users\Carson\Dropbox\OlyMEMS2\OWTSV1\OWTSV1\bin\Release\ZedGraph.xml
+C:\Users\Carson\Dropbox\OlyMEMS2\OWTSV1\OWTSV1\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Carson\Dropbox\OlyMEMS2\OWTSV1\OWTSV1\obj\Release\OWTSV1.Form1.resources
+C:\Users\Carson\Dropbox\OlyMEMS2\OWTSV1\OWTSV1\obj\Release\OWTSV1.OpenConnectionForm.resources
+C:\Users\Carson\Dropbox\OlyMEMS2\OWTSV1\OWTSV1\obj\Release\OWTSV1.Properties.Resources.resources
+C:\Users\Carson\Dropbox\OlyMEMS2\OWTSV1\OWTSV1\obj\Release\OWTSV1.csproj.GenerateResource.Cache

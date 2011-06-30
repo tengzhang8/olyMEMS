@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C# Express 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OWTSV1", "OWTSV1\OWTSV1.csproj", "{70D7E8B6-67D0-4113-91E1-ADFE63C68910}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70D7E8B6-67D0-4113-91E1-ADFE63C68910}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70D7E8B6-67D0-4113-91E1-ADFE63C68910}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70D7E8B6-67D0-4113-91E1-ADFE63C68910}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70D7E8B6-67D0-4113-91E1-ADFE63C68910}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

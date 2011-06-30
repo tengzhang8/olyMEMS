@@ -1,0 +1,11 @@
+C:\Users\Teng\Documents\Visual Studio 2008\Projects\OWTSV1\OWTSV1\bin\Debug\OWTSV1.exe
+C:\Users\Teng\Documents\Visual Studio 2008\Projects\OWTSV1\OWTSV1\bin\Debug\OWTSV1.pdb
+C:\Users\Teng\Documents\Visual Studio 2008\Projects\OWTSV1\OWTSV1\bin\Debug\ZedGraph.dll
+C:\Users\Teng\Documents\Visual Studio 2008\Projects\OWTSV1\OWTSV1\bin\Debug\ZedGraph.xml
+C:\Users\Teng\Documents\Visual Studio 2008\Projects\OWTSV1\OWTSV1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Teng\Documents\Visual Studio 2008\Projects\OWTSV1\OWTSV1\obj\Debug\OWTSV1.Form1.resources
+C:\Users\Teng\Documents\Visual Studio 2008\Projects\OWTSV1\OWTSV1\obj\Debug\OWTSV1.OpenConnectionForm.resources
+C:\Users\Teng\Documents\Visual Studio 2008\Projects\OWTSV1\OWTSV1\obj\Debug\OWTSV1.Properties.Resources.resources
+C:\Users\Teng\Documents\Visual Studio 2008\Projects\OWTSV1\OWTSV1\obj\Debug\OWTSV1.csproj.GenerateResource.Cache
+C:\Users\Teng\Documents\Visual Studio 2008\Projects\OWTSV1\OWTSV1\obj\Debug\OWTSV1.exe
+C:\Users\Teng\Documents\Visual Studio 2008\Projects\OWTSV1\OWTSV1\obj\Debug\OWTSV1.pdb
