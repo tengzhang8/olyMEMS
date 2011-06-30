@@ -1,7 +1,7 @@
 //Base Station
 //File: nordic_spi.c
 //Implements low level SPI functions to interface to the Nordic Wireless
-//Copyright C. Au and T. Zhang, 2010
+//Copyright C. Au and T. Zhang, 2011
 
 #include <avr/io.h>
 #include <stdlib.h>

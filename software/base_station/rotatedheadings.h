@@ -1,7 +1,7 @@
 //Base Station
 //File: rotatedheadings.h
 //Rotated headings font
-//Copyright C. Au and T. Zhang, 2010
+//Copyright C. Au and T. Zhang, 2011
 
 /*
  *

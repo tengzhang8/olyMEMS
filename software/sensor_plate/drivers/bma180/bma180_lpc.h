@@ -1,7 +1,7 @@
 //Sensor Plate
 //File: bma180.h
 //Contains functions to operate the BMA180 accelerometer
-//Copyright C. Au and T. Zhang, 2010
+//Copyright C. Au and T. Zhang, 2011
 
 //#ifndef BMA180_H_
 //#define BMA180_H_
@@ -26,20 +26,14 @@
 #define CTRLREG0 0x0D
 #define CTRLREG1 0x0E
 #define CTRLREG2 0x0F
-
 #define HIGHDUR 0x27
-
 #define BWTCS 0x20
 #define CTRLREG3 0x21
-
 #define HILOWNFO 0x25
 #define LOWDUR 0x26
-
 #define LOWTH 0x29
-
 #define tco_y 0x2F
 #define tco_z 0x30
-
 #define OLSB1 0x35
 
 //====================//

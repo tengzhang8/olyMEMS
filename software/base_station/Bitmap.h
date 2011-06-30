@@ -1,7 +1,7 @@
 //Base Station
 //File: Bitmap.h
 //Stores the splash welcome screen image
-//Copyright C. Au and T. Zhang, 2010
+//Copyright C. Au and T. Zhang, 2011
 
 #include <avr/pgmspace.h>
 #define LCD_WIDTH 128

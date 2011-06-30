@@ -1,30 +1,36 @@
+//Sensor Plate
+//File: bma180.c
+//Contains functions to operate the BMA180 accelerometer
+//Copyright C. Au and T. Zhang, 2011
+
 #include "bma180_lpc.h"
 #include "core/gpio/gpio.h"
 #include "core/ssp/ssp.h"
 
-
-void BMA180_CS_low(void) {
-//	gpioSetValue (0, 2, 0);
-	gpioSetValue (1, 10, 0);	//1 10
+void BMA180_CS_low(void) 
+{
+	gpioSetValue (1, 10, 0);
 }
 
-void BMA180_CS_high(void) {
-//	gpioSetValue (0, 2, 1);
+void BMA180_CS_high(void) 
+{
 	gpioSetValue (1, 10, 1);
 }
 
-
-void txdata(uint8_t data) {
+void txdata(uint8_t data) 
+{
 	sspSend (0, &data, 1);
 }
 
-uint8_t rxdata(void) {
+uint8_t rxdata(void) 
+{
 	uint8_t rxbuf = 0;
 	sspReceive(0, &rxbuf, 1);
 	return rxbuf;
 }
 
-uint8_t BMA180_single_read(uint8_t address) {
+uint8_t BMA180_single_read(uint8_t address) 
+{
 	//Returns the contents of any 1 byte register from any address
 	//sets the MSB for every address byte (READ mode)
 
@@ -40,7 +46,8 @@ uint8_t BMA180_single_read(uint8_t address) {
 	return byte;
 }
 
-void BMA180_single_write(uint8_t address, uint8_t data) {
+void BMA180_single_write(uint8_t address, uint8_t data) 
+{
 	//Write any data byte to any single address
 	//adds a 0 to the MSB of the address byte (WRITE mode)
 
@@ -53,7 +60,8 @@ void BMA180_single_write(uint8_t address, uint8_t data) {
 }
 
 
-void BMA180_multiple_read(uint8_t address, uint8_t *data, uint8_t len) {
+void BMA180_multiple_read(uint8_t address, uint8_t *data, uint8_t len) 
+{
 
 	uint8_t i;
 
@@ -67,7 +75,8 @@ void BMA180_multiple_read(uint8_t address, uint8_t *data, uint8_t len) {
 	BMA180_CS_high();
 }
 
-void switch_BMA180(void) {
+void switch_BMA180(void) 
+{
 	/*
 	uint32_t configReg = ( SSP_SSP0CR0_DSS_8BIT   // Data size = 8-bit
                   | SSP_SSP0CR0_FRF_SPI           // Frame format = SPI
@@ -88,7 +97,8 @@ void switch_BMA180(void) {
 }
 
 
-int init_BMA180(uint8_t range, uint8_t bw) {
+int init_BMA180(uint8_t range, uint8_t bw) 
+{
 	char temp, temp1;
 	
 	uint8_t address = 0;
@@ -141,14 +151,12 @@ int init_BMA180(uint8_t range, uint8_t bw) {
 	temp |= temp1;
 	BMA180_single_write(address, temp); //Write new range data, keep other bits the same
 	//-------------------------------------------------------------------------------------
-
-
 	
-
 	return 0;
 }
 
-volatile int sample_BMA180(volatile int16_t data[4]) {
+volatile int sample_BMA180(volatile int16_t data[4]) 
+{
 	//uint8_t temp;
 	uint8_t address = 0;
 
@@ -161,10 +169,8 @@ volatile int sample_BMA180(volatile int16_t data[4]) {
 	//BMA180_single_write(address, temp);
 
 	//Now wait for interrupt to generate
-	//while((PINB & (1<<BMA180_INT)) == 0);
 	while(gpioGetValue(0, 11) == 0);
-//	while(gpioGetValue(2, 0) == 0);
-	
+
 	//Now read all the raw data out.
 	address = ACCXLSB;
 	BMA180_multiple_read(address, data_temp, 7);
@@ -190,5 +196,4 @@ volatile int sample_BMA180(volatile int16_t data[4]) {
 	data[3] = (int8_t) data_temp[6];
 
 	return 1;
-
 }

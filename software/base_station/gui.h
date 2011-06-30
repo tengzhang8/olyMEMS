@@ -1,7 +1,7 @@
 //Base Station
 //File: gui.h
 //Implements high level functions in controlling the GUI on the graphics LCD
-//Copyright C. Au and T. Zhang, 2010
+//Copyright C. Au and T. Zhang, 2011
 
 /*
 int prev_menu_option = 1;

@@ -1,7 +1,7 @@
 //Base Station
 //File: main.c
 //Main source file for the Base Station
-//Copyright C. Au and T. Zhang, 2010
+//Copyright C. Au and T. Zhang, 2011
 
 #include <inttypes.h>
 #include <avr/io.h>
@@ -146,16 +146,14 @@ void boot_program_page (uint32_t page, uint8_t *buf)
     boot_rww_enable ();
  
     // Re-enable interrupts (if they were ever enabled).
-   sei();
+    sei();
 
     SREG = sreg;
 } 
 
-int main(void) {
-//	char c1 = 0;
+int main(void) 
+{
 	int k = 0;
-
-//	char buffer[10];
 	uint8_t nordic_data[32];
 	int	nordic_sample_number = 0;
 	double nordic_double_data[4];
@@ -166,14 +164,6 @@ int main(void) {
 	float	 vertical_data[3];
 	uint16_t datanumber;
 	uint8_t  datatype;
-
-
-
-//	char *point = NULL;
-
-	//Test CS
-	//DDRD |= (1<<PD4);
-	//PORTD |= (1<<PD4);
 
 	// Timer setup
     // use CLK/64 prescale value, clear timer/counter on compareA match                               
@@ -197,16 +187,13 @@ int main(void) {
 	// Wait a little while the display starts up
 	for(volatile uint16_t i=0; i<10000; i++);
 
-
 	init_encoders();
 	init_switches();
-
 	sei();
 
 	// Display welcome screen
 	pgm_state = WELCOME_SCR;
 	update_gui();
-
 
 	// Set up main menu
 	pgm_state = MAIN_MENU;
@@ -219,27 +206,16 @@ int main(void) {
 	while(1) {
 
 		if ((pgm_state == CONNECT_SCR) || (pc_mode == 1)) {
-//		if (pc_mode == 1) {
-		//for(volatile uint16_t i=0; i<5000; i++);
-		//printf("TENG IS AWESOME\n\r");
 			while ((!(nrf24l01_irq_pin_active() && nrf24l01_irq_rx_dr_active()))) {
 				update_encoder(max,pgm_state);
 			}
 		    nrf24l01_read_rx_payload(nordic_data, 32); //read the packet into data 
 		    nrf24l01_irq_clear_all(); //clear all interrupts in the 24L01 
-			//nordic_data[1] = '\0';
 
-		//printf("%s\n\r", nordic_data);
 			disassemble_bytepacket(nordic_data, &datatype, (void*)&datanumber,
 								(void*)vertical_data, 3*sizeof(float),
 								(void*)bmadata, 4*sizeof(uint16_t),
 								(void*)gyrodata, 4*sizeof(uint16_t));
-
-			//if (datanumber == 0) {
-			//	pgm_state = CONNECT_SCR;
-			//	update_gui();
-			//}			
-
 
 			if(datatype == 0) {
 
@@ -247,16 +223,13 @@ int main(void) {
 								(void*)vertical_data, 3*sizeof(float),
 								(void*)bmadata, 4*sizeof(uint16_t),
 								(void*)gyrodata, 4*sizeof(uint16_t));
-//				printf("%d#F:%.4f:%.4f:%.4f#A#X:%dY:%dZ:%dT:%d#G#X:%dY:%dZ:%dT%d\n\r",(unsigned int)datanumber, vertical_data[0],vertical_data[1],vertical_data[2],bmadata[0],bmadata[1],bmadata[2],bmadata[3],gyrodata[0],gyrodata[1],gyrodata[2],gyrodata[3]);
-//				printf("%d#F:%.4f:%.4f:%.4f\n\r",(unsigned int)datanumber, vertical_data[0],vertical_data[1],vertical_data[2]);
-				//if (pc_mode) {
-					// acc angle, gyro angle, kalman angle
-					printf("%d:A%.4f,B%.4f,C%.4f,S123\r\n",(unsigned int)datanumber, vertical_data[0],vertical_data[1],vertical_data[2]);
-					// acc x,y,z
-					printf("%d:D%d,E%d,F%d\r\n",(unsigned int)datanumber, bmadata[0],bmadata[1],bmadata[2]);
-					// gyro x, y, z
-					printf("%d:G%d,H%d,I%d\r\n",(unsigned int)datanumber, gyrodata[0],gyrodata[1],gyrodata[2]);
-				//}
+
+				// acc angle, gyro angle, kalman angle
+				printf("%d:A%.4f,B%.4f,C%.4f,S123\r\n",(unsigned int)datanumber, vertical_data[0],vertical_data[1],vertical_data[2]);
+				// acc x,y,z
+				printf("%d:D%d,E%d,F%d\r\n",(unsigned int)datanumber, bmadata[0],bmadata[1],bmadata[2]);
+				// gyro x, y, z
+				printf("%d:G%d,H%d,I%d\r\n",(unsigned int)datanumber, gyrodata[0],gyrodata[1],gyrodata[2]);
 
 			}
 			else if (datatype == 1) {
@@ -266,9 +239,9 @@ int main(void) {
 									(void*)bmadata, 0,
 									(void*)gyrodata, 0);
 
-				//if (pc_mode) {
-					printf("%d:J%.4f,K%.4f,L%.4f,Z123\r\n",(unsigned int)datanumber, yaxis_n[0], yaxis_n[1], yaxis_n[2]);
-				//}
+
+				printf("%d:J%.4f,K%.4f,L%.4f,Z123\r\n",(unsigned int)datanumber, yaxis_n[0], yaxis_n[1], yaxis_n[2]);
+
 
 			}
 			else if (datatype == 2) {
@@ -277,107 +250,68 @@ int main(void) {
 									(void*)bmadata, 0,
 									(void*)gyrodata, 0);
 
-				//if (pc_mode) {
-					printf("%d:M%.4f,N%.4f,P%.4f,Z123\r\n",(unsigned int)datanumber, yaxis_max[0], yaxis_max[1], yaxis_max[2]);
-					printf("&&&&&&&&&&&&&&&&&&&&&\r\n");
-					printf("&&&&&&&&&&&&&&&&&&&&&\r\n");
-					printf("&&&&&&&&&&&&&&&&&&&&&\r\n");
-					printf("&&&&&&&&&&&&&&&&&&&&&\r\n");
-					printf("&&&&&&&&&&&&&&&&&&&&&\r\n");
-					printf("&&&&&&&&&&&&&&&&&&&&&\r\n");
-					printf("&&&&&&&&&&&&&&&&&&&&&\r\n");
-					printf("&&&&&&&&&&&&&&&&&&&&&\r\n");
-					printf("&&&&&&&&&&&&&&&&&&&&&\r\n");
-					printf("&&&&&&&&&&&&&&&&&&&&&\r\n");
-					printf("&&&&&&&&&&&&&&&&&&&&&\r\n");
-					printf("&&&&&&&&&&&&&&&&&&&&&\r\n");
-					printf("&&&&&&&&&&&&&&&&&&&&&\r\n");
-				//}
+				printf("%d:M%.4f,N%.4f,P%.4f,Z123\r\n",(unsigned int)datanumber, yaxis_max[0], yaxis_max[1], yaxis_max[2]);
+				printf("&&&&&&&&&&&&&&&&&&&&&\r\n");
+				printf("&&&&&&&&&&&&&&&&&&&&&\r\n");
+				printf("&&&&&&&&&&&&&&&&&&&&&\r\n");
+				printf("&&&&&&&&&&&&&&&&&&&&&\r\n");
+				printf("&&&&&&&&&&&&&&&&&&&&&\r\n");
 
 				pgm_state = SUMMARY_SCR;
 				ks0108ClearScreen()
 				update_gui();
 			}
 		}
-			
 
 		// respond to encoder movements
-		update_encoder(max,pgm_state);
-		
+		update_encoder(max,pgm_state);	
 	}
 }
 
-void update_gui(void) {
-		if (pgm_state == WELCOME_SCR) {
-			welcome_screen();
-		} else if (pgm_state == MAIN_MENU) {
-			main_menu_setup();
-		} else if (pgm_state == WEIGHT_SEL) {
-
-		} else if (pgm_state == CONNECT_SCR) {
-			connect_setup(CONNECT_SCR);
-			printf("WAITING FOR DATA\n\r");
-			pc_mode = 1;
-		} else if (pgm_state == SUMMARY_SCR) {
-			summary_setup(yaxis_max[0], yaxis_max[1]);
-//		} else if (pgm_state == ACC_GRAPH) {
-//			graph_setup(max);
-		}
-
+void update_gui(void) 
+{
+	if (pgm_state == WELCOME_SCR) {
+	welcome_screen();
+	} else if (pgm_state == MAIN_MENU) {
+		main_menu_setup();
+	} else if (pgm_state == WEIGHT_SEL) {
+		// nothing
+	} else if (pgm_state == CONNECT_SCR) {
+		connect_setup(CONNECT_SCR);
+		printf("WAITING FOR DATA\n\r");
+		pc_mode = 1;
+	} else if (pgm_state == SUMMARY_SCR) {
+		summary_setup(yaxis_max[0], yaxis_max[1]);
+	}
 }
 
-void update_button(int back) {
+void update_button(int back) 
+{
+	if (pgm_state == MAIN_MENU) {
+		pgm_state = WEIGHT_SEL;
+		if (weight_menu_setup() == 3) {
+			pc_mode = 1;
+		} else {
+			pc_mode = 0;
+		}
+	} else if (pgm_state == WEIGHT_SEL) {
+		pgm_state = CONNECT_SCR;
+	} else if (pgm_state == CONNECT_SCR) {
+		pgm_state = SUMMARY_SCR;										
+	} else if (pgm_state == SUMMARY_SCR) {
+		pgm_state = MAIN_MENU;
+		pc_mode = 0;
+	}
 
-			if (pgm_state == MAIN_MENU) {
-				pgm_state = WEIGHT_SEL;
-				if (weight_menu_setup() == 3) {
-					pc_mode = 1;
-				} else {
-					pc_mode = 0;
-				}
-			} else if (pgm_state == WEIGHT_SEL) {
-				pgm_state = CONNECT_SCR;
-				
-//				if (back == 1) {
-//					pgm_state = MAIN_MENU;
-//				}
-		//		if (pc_mode == 1) {
-		//			pgm_state = MAIN_MENU;
-		//			pc_mode = 0;
-		//		}
-			} else if (pgm_state == CONNECT_SCR) {
-//				pgm_state = WEIGHT_SEL;
-				pgm_state = SUMMARY_SCR;	
-
-//				if (back == 1) {
-//					pgm_state = WEIGHT_SEL;
-//				}	
-//			} else if (pgm_state == DATA_COLLECTED) {
-//				pgm_state = SUMMARY_SCR;	
-//				if (back == 1) {
-//					pgm_state = WEIGHT_SEL;
-//				}									
-			} else if (pgm_state == SUMMARY_SCR) {
-//				pgm_state = ACC_GRAPH;
-//				if (back == 1) {
-					pgm_state = MAIN_MENU;
-//				} 								
-//			} else if (pgm_state == ACC_GRAPH) {
-//				pgm_state = MAIN_MENU;
-//				if (back == 1) {
-//					pgm_state = SUMMARY_SCR;
-//				}
-				pc_mode = 0;
-			}
-
-			update_gui();
+	update_gui();
 }
 
 
 void disassemble_bytepacket(uint8_t *byte_data, uint8_t *datatype, uint8_t *datanumber,
 							uint8_t *data1, int len1, 
 							uint8_t *data2, int len2,
-							uint8_t *data3, int len3) {
+							uint8_t *data3, int len3) 
+{
 
 	int i;
 

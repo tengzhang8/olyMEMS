@@ -1,96 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Session Name="C:\Users\Carson\New folder\owts\build\codelite\LPC1343 Workspace.workspace">
-  <int Value="0" Name="m_selectedTab"/>
-  <wxString Value="C:\Users\Carson\New folder\owts\build\codelite\LPC1343 Workspace.workspace" Name="m_workspaceName"/>
+<Session Name="C:\Users\Teng\olyMEMS\software\sensor_plate\build\codelite\LPC1343 Workspace.workspace">
+  <int Value="5" Name="m_selectedTab"/>
+  <wxString Value="C:\Users\Teng\olyMEMS\software\sensor_plate\build\codelite\LPC1343 Workspace.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
-      <wxString Value="C:\Users\Carson\New folder\owts\main.c" Name="FileName"/>
-      <int Value="292" Name="FirstVisibleLine"/>
-      <int Value="299" Name="CurrentLine"/>
+      <wxString Value="C:\Users\Teng\olyMEMS\software\sensor_plate\main.c" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="3" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="C:\Users\Carson\New folder\owts\sysinit.c" Name="FileName"/>
-      <int Value="119" Name="FirstVisibleLine"/>
-      <int Value="125" Name="CurrentLine"/>
+      <wxString Value="C:\Users\Teng\olyMEMS\software\sensor_plate\Makefile" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="0" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="C:\Users\Carson\New folder\owts\drivers\nordic\nrf24l01.c" Name="FileName"/>
-      <int Value="479" Name="FirstVisibleLine"/>
-      <int Value="501" Name="CurrentLine"/>
+      <wxString Value="C:\Users\Teng\olyMEMS\software\sensor_plate\drivers\bma180\bma180_lpc.c" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="3" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="C:\Users\Carson\New folder\owts\drivers\nordic\nordic_spi.c" Name="FileName"/>
-      <int Value="5" Name="FirstVisibleLine"/>
-      <int Value="10" Name="CurrentLine"/>
+      <wxString Value="C:\Users\Teng\olyMEMS\software\sensor_plate\drivers\bma180\bma180_lpc.h" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="3" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="C:\Users\Carson\New folder\owts\core\timer16\timer16.c" Name="FileName"/>
-      <int Value="72" Name="FirstVisibleLine"/>
-      <int Value="73" Name="CurrentLine"/>
+      <wxString Value="C:\Users\Teng\olyMEMS\software\sensor_plate\drivers\itg3200\itg3200.c" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="3" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="C:\Users\Carson\New folder\owts\core\timer32\timer32.c" Name="FileName"/>
-      <int Value="18" Name="FirstVisibleLine"/>
-      <int Value="26" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="C:\Users\Carson\New folder\owts\core\timer32\timer32.h" Name="FileName"/>
-      <int Value="37" Name="FirstVisibleLine"/>
-      <int Value="38" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="C:\Users\Carson\New folder\owts\core\ssp\ssp.c" Name="FileName"/>
-      <int Value="149" Name="FirstVisibleLine"/>
-      <int Value="150" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="C:\Users\Carson\New folder\owts\core\gpio\gpio.h" Name="FileName"/>
-      <int Value="37" Name="FirstVisibleLine"/>
-      <int Value="38" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="C:\Users\Carson\New folder\owts\core\gpio\gpio.c" Name="FileName"/>
-      <int Value="41" Name="FirstVisibleLine"/>
-      <int Value="42" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="C:\Users\Carson\New folder\owts\drivers\bma180\bma180_lpc.h" Name="FileName"/>
-      <int Value="47" Name="FirstVisibleLine"/>
-      <int Value="71" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="C:\Users\Carson\New folder\owts\drivers\nordic\nordic_spi.h" Name="FileName"/>
-      <int Value="2" Name="FirstVisibleLine"/>
-      <int Value="25" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="C:\Users\Carson\New folder\owts\core\cpu\cpu.c" Name="FileName"/>
-      <int Value="59" Name="FirstVisibleLine"/>
-      <int Value="60" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="C:\Users\Carson\New folder\owts\core\pmu\pmu.c" Name="FileName"/>
-      <int Value="45" Name="FirstVisibleLine"/>
-      <int Value="46" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="C:\Users\Carson\New folder\owts\drivers\itg3200\itg3200.c" Name="FileName"/>
-      <int Value="78" Name="FirstVisibleLine"/>
-      <int Value="91" Name="CurrentLine"/>
+      <wxString Value="C:\Users\Teng\olyMEMS\software\sensor_plate\drivers\itg3200\itg3200.h" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="3" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
     </TabInfo>
   </TabInfoArray>

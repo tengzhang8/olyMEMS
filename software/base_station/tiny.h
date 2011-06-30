@@ -1,7 +1,7 @@
 //Base Station
 //File: tiny.h
 //Tiny font
-//Copyright C. Au and T. Zhang, 2010
+//C. Au and T. Zhang, 2011
 
 /*
  *
